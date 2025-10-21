@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎯 Guess the Number | SkillCraft Task 02</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="game-card">
+      <h1>🎯 Guess the Number</h1>
+      <p class="subtitle">Think you can guess the secret number between <b>1</b> and <b>100</b>?</p>
+      
+      <div class="input-area">
+        <input type="number" id="userGuess" placeholder="Enter your guess..." min="1" max="100" />
+        <button id="checkBtn">Guess 🔍</button>
+        <button id="restartBtn" class="hidden">Play Again 🔁</button>
+      </div>
+      
+      <p id="message"></p>
+      <p id="attempts"></p>
+    </div>
+
+    <footer>
+      <p>💡 Created by <strong>Kushmitha</strong> | SkillCraft Technology</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

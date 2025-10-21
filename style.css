@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+.game-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 255, 200, 0.2);
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  animation: floatIn 1s ease forwards;
+}
+
+@keyframes floatIn {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #00e5ff;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #00e5ff;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #b3e5fc;
+  margin-bottom: 25px;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+input[type="number"] {
+  padding: 12px;
+  width: 80%;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+  outline: none;
+  transition: 0.3s;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+input[type="number"]:focus {
+  box-shadow: 0 0 10px #00e5ff;
+  background: rgba(0, 5, 8, 0.883);
+}
+
+button {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#checkBtn {
+  background: linear-gradient(45deg, #00e5ff, #00c853);
+  color: #000;
+  font-weight: 600;
+}
+
+#checkBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00e5ff;
+}
+
+#restartBtn {
+  background: linear-gradient(45deg, #ff4081, #ff1744);
+  color: #fff;
+  font-weight: 600;
+}
+
+#restartBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff4081;
+}
+
+.hidden {
+  display: none;
+}
+
+#message {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  min-height: 28px;
+}
+
+#attempts {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #bdbdbd;
+}
+
+footer {
+  margin-top: 25px;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  text-shadow: 0 0 5px #00e5ff;
+}
